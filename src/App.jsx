@@ -330,11 +330,7 @@ const DestinationCard = ({ code, city, country, onClick, index }) => (
 );
 
 const CountdownDay = ({ data, isActive, onGenerate, imageUrl, isGenerating, onRegenerate }) => {
-  useEffect(() => {
-    if (isActive && !imageUrl && !isGenerating) {
-      onGenerate();
-    }
-  }, [isActive, imageUrl, isGenerating, onGenerate]);
+  // Images are now preloaded when destination is selected, no need to generate on active
 
   if (!isActive) return null;
 
@@ -435,6 +431,27 @@ const App = () => {
     setSelectedDest(code);
     setCurrentDayIndex(0);
   };
+
+  // Preload all images when destination is selected
+  useEffect(() => {
+    if (selectedDest) {
+      const totalDays = PROMPTS_DATA[selectedDest].prompts.length;
+
+      // Start generating all images sequentially
+      // We do this sequentially to avoid hitting rate limits
+      const preloadImages = async () => {
+        for (let i = 0; i < totalDays; i++) {
+          await generateForDay(selectedDest, i);
+          // Small delay between requests to be respectful of API limits
+          if (i < totalDays - 1) {
+            await new Promise(resolve => setTimeout(resolve, 500));
+          }
+        }
+      };
+
+      preloadImages();
+    }
+  }, [selectedDest]); // Only run when destination changes
 
   const handleBack = () => {
     setSelectedDest(null);
