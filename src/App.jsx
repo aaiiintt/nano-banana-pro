@@ -24,6 +24,7 @@ const PROMPTS_DATA = {
         title: "Exchange Rate",
         icon: <Coffee className="w-5 h-5" />,
         subject: "A high-angle close-up of a wooden café table with a porcelain coffee cup, a Danish pastry, and a folded newspaper.",
+        copy: "Picture yourself at a sun-drenched café in Nyhavn, where morning light dances across cobblestones and the aroma of freshly baked wienerbrød fills the air. Your Danish adventure is just beginning, and every krone spent is an investment in memories that will last a lifetime.",
         text: "1 EURO = 7.46 DKK",
         colors: "Emerald Green, Deep Navy Blue, Off-White"
       },
@@ -32,6 +33,7 @@ const PROMPTS_DATA = {
         title: "What to Wear",
         icon: <Shirt className="w-5 h-5" />,
         subject: "A fashion illustration of a traveler in a beige trench coat and wool scarf walking along Nyhavn waterfront.",
+        copy: "Copenhagen's beauty shines brightest in the rain. Layer up in elegant Scandinavian style—think tailored coats and soft wool scarves—as you explore fairy-tale streets where hygge meets haute couture. The weather may be crisp, but your spirit will be warm.",
         text: "12°C / RAINY",
         colors: "Autumnal Rust, Navy Blue, Grey"
       },
@@ -40,6 +42,7 @@ const PROMPTS_DATA = {
         title: "Gastronomy",
         icon: <Utensils className="w-5 h-5" />,
         subject: "A top-down view of a premium lobster salad served on a crisp white tablecloth with silver cutlery. The food looks artful and delicious.",
+        copy: "Your journey begins at 35,000 feet, where Air France transforms travel into an art form. Savor exquisitely crafted cuisine as clouds drift below and anticipation builds above. This is more than a flight—it's the elegant prelude to your Nordic adventure.",
         text: "SERVING ONBOARD",
         colors: "Air France Navy, White, Silver"
       },
@@ -48,6 +51,7 @@ const PROMPTS_DATA = {
         title: "Events",
         icon: <Ticket className="w-5 h-5" />,
         subject: "A glowing lantern and an old-fashioned ticket stub floating in a magical void, representing Tivoli Gardens.",
+        copy: "Step into a world where Victorian romance meets modern enchantment. Tivoli Gardens awaits with twinkling lights, carousel music, and the kind of magic that made Hans Christian Andersen fall in love with this city. Some places are pure poetry in motion.",
         text: "TIVOLI GARDENS",
         colors: "Vibrant Yellow, Midnight Blue"
       },
@@ -56,6 +60,7 @@ const PROMPTS_DATA = {
         title: "Don't Forget",
         icon: <Luggage className="w-5 h-5" />,
         subject: "A minimalist arrangement of packing essentials: A passport, a travel adapter, and a camera on a sleek surface.",
+        copy: "The essentials for the perfect Danish escape: your passport (gateway to adventure), a travel adapter (because European outlets have their own charm), and a camera (though no lens can truly capture the magic you're about to experience). Pack light, dream big.",
         text: "DON'T FORGET...",
         colors: "Navy Blue, White, Sand"
       }
@@ -71,6 +76,7 @@ const PROMPTS_DATA = {
         title: "Exchange Rate",
         icon: <Coffee className="w-5 h-5" />,
         subject: "A sun-drenched outdoor table with a takeaway coffee cup and a currency receipt under the shadow of a palm tree.",
+        copy: "Golden California sunshine comes with golden opportunities. From beachfront brunches to Beverly Hills boutiques, your euros go far in the City of Angels. This is where dreams are currency, and every dollar spent brings you closer to the Hollywood ending of your perfect vacation.",
         text: "1 EURO = 1.08 USD",
         colors: "Palm Green, Sunny Yellow, White"
       },
@@ -79,6 +85,7 @@ const PROMPTS_DATA = {
         title: "What to Wear",
         icon: <Shirt className="w-5 h-5" />,
         subject: "A stylish figure on a balcony wearing sunglasses and a linen shirt, with the LA skyline in the background.",
+        copy: "Dress for perpetual summer in LA's effortless cool. Think breezy linens, designer sunglasses, and that California confidence that comes naturally under endless blue skies. The temperature is perfect, the vibe is eternal, and you're about to look absolutely golden.",
         text: "24°C / SUNNY",
         colors: "Azure Blue, Pink, Gold"
       },
@@ -87,6 +94,7 @@ const PROMPTS_DATA = {
         title: "Gastronomy",
         icon: <Utensils className="w-5 h-5" />,
         subject: "Seared Scallops arranged geometrically on a rectangular plate, sitting on an airplane tray table against a sunset window view.",
+        copy: "Before you touch down in Los Angeles, indulge in the kind of elevated cuisine that makes the journey as memorable as the destination. Air France brings Michelin-starred inspiration to the skies, turning your transatlantic flight into a preview of the extraordinary experiences awaiting you.",
         text: "SERVING ONBOARD",
         colors: "Sunset Orange, Navy, White"
       },
@@ -95,6 +103,7 @@ const PROMPTS_DATA = {
         title: "Events",
         icon: <Ticket className="w-5 h-5" />,
         subject: "A chrome car hood ornament gleaming under a single spotlight beam.",
+        copy: "In a city built on wheels and dreams, the LA Auto Show celebrates both. Witness tomorrow's automotive masterpieces today, where sleek design meets cutting-edge innovation under the California sun. This is where horsepower meets Hollywood glamour, and you have a front-row seat.",
         text: "LA AUTO SHOW",
         colors: "Pale Yellow, Midnight Black"
       },
@@ -103,6 +112,7 @@ const PROMPTS_DATA = {
         title: "Don't Forget",
         icon: <Luggage className="w-5 h-5" />,
         subject: "A flat-lay illustration of packing items: Sunglasses, a driving license, and sunscreen.",
+        copy: "Pack your essentials for the West Coast dream: statement sunglasses to shield your eyes from that famous California glare, your driver's license for cruising PCH, and plenty of sunscreen (the sun here doesn't play favorites). Adventure awaits, and you're dressed for the part.",
         text: "DON'T FORGET...",
         colors: "Ocean Blue, White, Red Accent"
       }
@@ -118,6 +128,7 @@ const PROMPTS_DATA = {
         title: "Exchange Rate",
         icon: <Coffee className="w-5 h-5" />,
         subject: "A traditional Arabic tea set on a table with the Burj Khalifa silhouette in the distance.",
+        copy: "In a city where ambition reaches the clouds and luxury knows no limits, your currency opens doors to experiences beyond imagination. From gold-dusted cappuccinos to sky-high adventures, Dubai transforms every dirham into a moment of pure extravagance. Welcome to where the future lives.",
         text: "1 EURO = 3.95 AED",
         colors: "Emerald Green, Sandy Gold"
       },
@@ -126,6 +137,7 @@ const PROMPTS_DATA = {
         title: "What to Wear",
         icon: <Shirt className="w-5 h-5" />,
         subject: "An elegant figure wearing a loose silk tunic and linen trousers against a geometric Islamic archway.",
+        copy: "Embrace the desert heat with flowing fabrics and refined elegance. Dubai's style is all about luxurious comfort—silk that breathes, linen that flows, and an air of sophistication that's perfectly at home among gleaming skyscrapers and ancient souks. Dress for opulence, stay cool under the Arabian sun.",
         text: "32°C / HOT",
         colors: "Sand, White, Azure Blue"
       },
@@ -134,6 +146,7 @@ const PROMPTS_DATA = {
         title: "Gastronomy",
         icon: <Utensils className="w-5 h-5" />,
         subject: "A close-up of a glossy chocolate entremet dessert on a white porcelain plate with the Air France logo.",
+        copy: "As you soar toward the Arabian Peninsula, Air France ensures your arrival is preceded by culinary artistry. Each course is a celebration, each flavor a promise of the extraordinary fusion of cultures awaiting you. The journey to Dubai begins with decadence at altitude.",
         text: "SERVING ONBOARD",
         colors: "Twilight Blue, Chocolate Brown, Gold"
       },
@@ -142,6 +155,7 @@ const PROMPTS_DATA = {
         title: "Events",
         icon: <Ticket className="w-5 h-5" />,
         subject: "Abstract macro details of watch gears and springs arranged geometrically.",
+        copy: "Where precision meets prestige, Dubai Watch Week showcases horological masterpieces in the city that never stops reaching for tomorrow. Marvel at timepieces worth fortunes, where every tick is testimony to human craftsmanship. In Dubai, even time itself is luxurious.",
         text: "DUBAI WATCH WEEK",
         colors: "Gold, Black, Navy"
       },
@@ -150,6 +164,7 @@ const PROMPTS_DATA = {
         title: "Don't Forget",
         icon: <Luggage className="w-5 h-5" />,
         subject: "A graphic arrangement of packing items: A silk scarf, sunglasses, and a passport.",
+        copy: "Your passport to paradise, designer sunglasses for those impossibly bright desert days, and a silk scarf for evenings when air-conditioning meets elegance. Dubai demands you arrive prepared for a thousand-and-one nights of modern Arabian luxury. Pack smart, live lavishly.",
         text: "DON'T FORGET...",
         colors: "Sand, Navy, White"
       }
@@ -338,8 +353,8 @@ const CountdownDay = ({ data, isActive, onGenerate, imageUrl, isGenerating, onRe
             {data.icon}
             <span className="uppercase tracking-[0.2em] text-sm font-bold">{data.title}</span>
           </div>
-          <p className="text-gray-500 font-light italic leading-relaxed">
-            "{data.subject}"
+          <p className="text-gray-600 font-light leading-relaxed text-[15px]">
+            {data.copy}
           </p>
         </div>
 
